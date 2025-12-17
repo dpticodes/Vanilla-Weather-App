@@ -1,17 +1,53 @@
 body {
-  background-color: #e0f2f1;
-  font-family: "Roboto", sans-serif;
+  background-image: url(images/sky-red.jpg);
+  background-repeat: no-repeat; /* stop repeating */
+  background-size: cover; /* fill the screen */
+  background-position: center;
+  font-family: "Funnel Sans", sans-serif;
+}
+a {
+  color: #ffe700;
 }
 .app-container {
   background: linear-gradient(
-    to bottom,
-    rgb(95, 209, 249) 0%,
-    rgb(85, 88, 218) 100%
+    112.5deg,
+    rgb(95, 10, 135) 11.4%,
+    rgb(164, 80, 139) 60.2%
   );
-  color: beige;
+  color: white;
   max-width: 700px;
   margin: 50px auto;
   padding: 40px;
   box-shadow: 0 40px 60px rgba(65, 50, 100, 0.1);
   border-radius: 16px;
+}
+header {
+  border-bottom: 1px solid #f7d5a6;
+  padding: 0 0 25px 0;
+}
+.search-form-input {
+  background: #f7d5a6;
+  border: none;
+  border-radius: 25px;
+  width: 80%;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.search-form-button {
+  background: #fdb44b;
+  color: #4a1446;
+  border: none;
+  border-radius: 25px;
+  width: 17%;
+  padding: 15px;
+  margin-right: 7px;
+  font-size: 16px;
+  text-align: center;
+}
+
+footer {
+  border-top: 1px solid #f7d5a6;
+  padding: 15px 0 0 0;
+  text-align: center;
+  font-size: 15px;
 }
