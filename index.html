@@ -3,39 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Vanilla Weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="submit" value="Search" />
-        <input type="search" placeholder="Enter city name..." required />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Berlin</h1>
-        <p>
-          Wednesday date month,
-          <br />
-          13:43
-        </p>
-      </div>
-      <div>🌟 <br />Mostly cloudy <br />Wind: Humidity:</div>
-      <div>12°C |°F <br />LowTemp-HighTemp</div>
-    </main>
-    <footer>
-      This page is coded by
-      <a href="https://github.com/dpticodes" target="_blank"> Deepti Ayyar</a>
-      and is open-sourced on
-      <a
-        href="https://github.com/dpticodes/Vanilla-Weather-App"
-        target="_blank"
-      >
-        GitHub</a
-      >
-      and is hosted on
-      <a href="https://happy-skies.netlify.app/" target="_blank">Netlify</a>.
-    </footer>
+    <div class="app-container">
+      <header>
+        <form>
+          <input type="submit" value="Search" />
+          <input type="search" placeholder="Enter city name..." required />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>Berlin</h1>
+          <p>
+            Wednesday date month,
+            <br />
+            13:43
+          </p>
+        </div>
+        <div>🌟 <br />Mostly cloudy <br />Wind: Humidity:</div>
+        <div>12°C |°F <br />LowTemp-HighTemp</div>
+      </main>
+      <footer>
+        This page is coded by
+        <a href="https://github.com/dpticodes" target="_blank"> Deepti Ayyar</a>
+        and is open-sourced on
+        <a
+          href="https://github.com/dpticodes/Vanilla-Weather-App"
+          target="_blank"
+        >
+          GitHub</a
+        >
+        and is hosted on
+        <a href="https://happy-skies.netlify.app/" target="_blank">Netlify</a>.
+      </footer>
+    </div>
   </body>
 </html>
