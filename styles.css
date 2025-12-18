@@ -1,7 +1,7 @@
 body {
   background-image: url(images/sky-red.jpg);
-  background-repeat: no-repeat; /* stop repeating */
-  background-size: cover; /* fill the screen */
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   font-family: "Montserrat", sans-serif;
 }
@@ -17,7 +17,7 @@ a {
   color: white;
   max-width: 700px;
   margin: 50px auto;
-  padding: 40px 60px 40px 60px;
+  padding: 40px;
   box-shadow: 0 40px 60px rgba(65, 50, 100, 0.1);
   border-radius: 16px;
 }
@@ -25,29 +25,36 @@ header {
   border-bottom: 1px solid #f7d5a6;
   padding: 0 0 15px 0;
 }
+.search-form {
+  display: flex;
+  gap: 10px;
+}
 .search-form-input {
+  flex: 1;
   background: #f7d5a6;
   border: none;
   border-radius: 25px;
-  width: 80%;
   padding: 15px 20px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .search-form-button {
   background: #fdb44b;
   color: #4a1446;
   border: none;
   border-radius: 25px;
-  width: 17%;
-  padding: 15px;
-  margin-right: 7px;
-  font-size: 16px;
-  text-align: center;
+  padding: 15px 20px;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 main {
-  padding: 50px 0 10px 0;
+  padding: 20px;
 }
-
+.weather-app-data {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 .weather-app-city {
   margin-top: 15px;
   font-size: 38px;
@@ -55,43 +62,11 @@ main {
   color: #fdb44b;
   line-height: 48px;
 }
-.weather-app-details {
+.weather-city-details {
   font-size: 16px;
   color: antiquewhite;
   line-height: 24px;
   font-weight: 500;
-}
-.weather-app-data {
-  display: flex;
-  justify-content: space-around;
-}
-.weather-app-description {
-  font-size: 16px;
-  color: antiquewhite;
-  line-height: 30px;
-  font-weight: 500;
-}
-.emoji {
-  display: inline-block; /* important */
-  margin-bottom: 50px;
-  font-size: 88px;
-}
-.weather-app-temp {
-  display: flex;
-  font-size: 16px;
-  color: antiquewhite;
-  line-height: 30px;
-  font-weight: 500;
-}
-.temp {
-  display: block; /* important */
-  margin-bottom: 50px;
-  font-size: 90 px;
-}
-.temp-unit {
-  display: block;
-  font-size: 15px;
-  padding-right: 20px;
 }
 .description {
   font-size: 16px;
@@ -99,8 +74,18 @@ main {
   line-height: 30px;
   font-weight: 500;
 }
-.temp-description {
-  padding: 20px;
+.emoji {
+  font-size: 88px;
+}
+.weather-temp-details {
+  display: flex;
+}
+.temp-value {
+  font-size: 88px;
+}
+.temp-unit {
+  font-size: 16px;
+  margin-top: 15px;
 }
 footer {
   border-top: 1px solid #f7d5a6;

@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Vanilla Weather App</title>
+    <title>Vanilla App_copy</title>
   </head>
   <body>
     <div class="app-container">
@@ -24,31 +24,31 @@
             class="search-form-input"
           />
         </form>
-        <div>
-          <h1 class="weather-app-city">Berlin, DE</h1>
-          <p class="weather-app-details">
-            Wednesday date month,
-            <br />
-            13:43
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Berlin, DE</h1>
+            <p class="weather-city-details">13:43, Wednesday 17 Dec</p>
+          </div>
+          <div class="weather-temp-details">
+            <div class="temp-value">12</div>
+            <div class="temp-unit">°C |°F</div>
+          </div>
         </div>
       </header>
       <main>
         <div class="weather-app-data">
           <div>
-            <p class="weather-app-description">
-              <span class="emoji"> 🌟 </span>
-            </p>
+            <div class="emoji">🌟</div>
+            <p class="description">Mostly cloudy</p>
+          </div>
 
+          <div>
             <p class="description">
-              Mostly cloudy <br />Wind: <strong> 4.12km/h</strong>, Humidity:
+              Wind: <strong> 4.12km/h</strong>,<br />
+              Humidity:
               <strong> 75%.</strong>
             </p>
-          </div>
-          <div class="weather-app-temp">
-            <div class="temp">12</div>
-            <div class="temp-unit">°C |°F</div>
-            <p class="temp-description">LowTemp: 10°C, <br />HighTemp: 15°C</p>
+            <p class="description">LowTemp: 10°C, <br />HighTemp: 15°C</p>
           </div>
         </div>
       </main>
