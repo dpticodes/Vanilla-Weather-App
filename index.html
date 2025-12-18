@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -24,18 +24,33 @@
             class="search-form-input"
           />
         </form>
-      </header>
-      <main>
         <div>
-          <h1>Berlin</h1>
-          <p>
+          <h1 class="weather-app-city">Berlin, DE</h1>
+          <p class="weather-app-details">
             Wednesday date month,
             <br />
             13:43
           </p>
         </div>
-        <div>🌟 <br />Mostly cloudy <br />Wind: Humidity:</div>
-        <div>12°C |°F <br />LowTemp-HighTemp</div>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <p class="weather-app-description">
+              <span class="emoji"> 🌟 </span>
+            </p>
+
+            <p class="description">
+              Mostly cloudy <br />Wind: <strong> 4.12km/h</strong>, Humidity:
+              <strong> 75%.</strong>
+            </p>
+          </div>
+          <div class="weather-app-temp">
+            <div class="temp">12</div>
+            <div class="temp-unit">°C |°F</div>
+            <p class="temp-description">LowTemp: 10°C, <br />HighTemp: 15°C</p>
+          </div>
+        </div>
       </main>
       <footer>
         This page is coded by
