@@ -46,6 +46,9 @@ header {
   font-size: 1rem;
   white-space: nowrap;
 }
+.search-form-button:hover {
+  cursor: pointer;
+}
 main {
   padding: 20px;
 }
