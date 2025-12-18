@@ -15,18 +15,19 @@
   <body>
     <div class="app-container">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input type="submit" value="Search" class="search-form-button" />
           <input
             type="search"
             placeholder="Enter city name..."
             required
             class="search-form-input"
+            id="search-form-input"
           />
         </form>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Berlin, DE</h1>
+            <h1 class="weather-app-city" id="city">Berlin, DE</h1>
             <p class="weather-city-details">13:43, Wednesday 17 Dec</p>
           </div>
           <div class="weather-temp-details">
@@ -38,17 +39,20 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <div class="emoji">🌟</div>
+            <div class="emoji">🌦</div>
             <p class="description">Mostly cloudy</p>
           </div>
 
           <div>
             <p class="description">
+              LowTemp: <strong>10°C</strong>, <br />HighTemp:
+              <strong>15°C</strong>
+            </p>
+            <p class="description">
               Wind: <strong> 4.12km/h</strong>,<br />
               Humidity:
               <strong> 75%.</strong>
             </p>
-            <p class="description">LowTemp: 10°C, <br />HighTemp: 15°C</p>
           </div>
         </div>
       </main>
@@ -66,5 +70,6 @@
         <a href="https://happy-skies.netlify.app/" target="_blank">Netlify</a>.
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
