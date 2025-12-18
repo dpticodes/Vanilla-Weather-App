@@ -93,3 +93,28 @@ footer {
   text-align: center;
   font-size: 15px;
 }
+@media (max-width: 600px) {
+  .app-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .weather-app-data {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .weather-temp-details {
+    justify-content: center;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form-button {
+    width: 100%;
+  }
+}
