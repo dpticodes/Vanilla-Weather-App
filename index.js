@@ -48,6 +48,7 @@ function formatDate(date) {
   let currentDate = date.getDate();
   let hours = date.getHours();
   let minutes = date.getMinutes();
+
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
