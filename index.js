@@ -7,13 +7,55 @@ function refreshTemp(response) {
   let feelTemp = Math.round(response.data.temperature.feels_like);
   let windElement = document.querySelector("#wind");
   let humidityElement = document.querySelector("#humidity");
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
 
   cityElement.innerHTML = response.data.city;
+  timeElement.innerHTML = formatDate(date);
   tempElement.innerHTML = temperature;
   weatherDescElement.innerHTML = response.data.condition.description;
   feelLikeElement.innerHTML = feelTemp;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   humidityElement.innerHTML = response.data.temperature.humidity;
+}
+
+function formatDate(date) {
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  let day = days[date.getDay()];
+  let month = months[date.getMonth()];
+  let currentDate = date.getDate();
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+
+  return `${hours}:${minutes} ${day}, ${currentDate} ${month}`;
 }
 
 function searchCity(city) {
