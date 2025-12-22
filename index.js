@@ -1,11 +1,9 @@
 function refreshTemp(response) {
   let tempElement = document.querySelector("#temp-value");
-  let temperature = response.data.temperature.current;
+  let temperature = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#city");
-  let city = response.data.city;
-
-  cityElement.innerHTML = city;
-  tempElement.innerHTML = Math.round(temperature);
+  cityElement.innerHTML = response.data.city;
+  tempElement.innerHTML = temperature;
 }
 
 function searchCity(city) {
@@ -17,10 +15,12 @@ function searchCity(city) {
 function submitSearch(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
+  let cityElement = document.querySelector("#city");
+  cityElement.innerHTML = searchInput.value;
   searchCity(searchInput.value);
 }
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", submitSearch);
 
-searchCity("Berlin");
+searchCity("Mumbai");
