@@ -43,15 +43,18 @@
         <div class="weather-app-data">
           <div>
             <div class="emoji">🌦</div>
-            <p class="description">Mostly cloudy</p>
+            <p class="description">
+              <span id="weather-description"></span>
+            </p>
           </div>
 
           <div>
             <p class="description">
-              Feels like: <strong>10°C</strong> <br />
-              Wind: <strong> 4.12km/h</strong>,<br />
+              Feels like: <strong><span id="temp-feel"></span> °C</strong>
+              <br />
+              Wind: <strong> <span id="wind">4.12</span> km/h</strong>,<br />
               Humidity:
-              <strong> 75%.</strong>
+              <strong><span id="humidity">75</span> %.</strong>
             </p>
           </div>
         </div>
