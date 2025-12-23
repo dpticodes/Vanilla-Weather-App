@@ -58,6 +58,7 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .weather-app-city {
   margin-top: 15px;
   font-size: 38px;
@@ -80,9 +81,30 @@ main {
 .description strong {
   color: #fdb44b;
 }
-.emoji {
-  font-size: 88px;
+.weather-app-data-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 30px;
 }
+.weather-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+}
+.weather-right {
+  text-align: left;
+}
+
+.weather-icon {
+  width: 88px;
+  height: 88px;
+  display: block;
+  margin-bottom: 8px;
+}
+
 .weather-temp-details {
   display: flex;
 }
