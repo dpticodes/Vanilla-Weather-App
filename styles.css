@@ -31,6 +31,7 @@ header {
 }
 .search-form-input {
   flex: 1;
+  min-width: 0;
   background: #f7d5a6;
   border: none;
   border-radius: 25px;
@@ -38,6 +39,7 @@ header {
   font-size: 1rem;
 }
 .search-form-button {
+  flex-shrink: 0;
   background: #fdb44b;
   color: #4a1446;
   border: none;
@@ -45,9 +47,16 @@ header {
   padding: 15px 20px;
   font-size: 1rem;
   white-space: nowrap;
-}
-.search-form-button:hover {
   cursor: pointer;
+}
+@media (max-width: 420px) {
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form-button {
+    width: 100%;
+  }
 }
 main {
   padding: 20px;
