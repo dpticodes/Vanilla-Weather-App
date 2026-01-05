@@ -24,6 +24,7 @@ function refreshTemp(response) {
       class="weather-icon"
     />
   `;
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -80,7 +81,16 @@ function submitSearch(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "3c4ba37b00dacafa6bo5t89fa3684eff";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric
+`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -110,4 +120,3 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", submitSearch);
 
 searchCity("Mumbai");
-displayForecast();
